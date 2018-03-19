@@ -1,0 +1,37 @@
+html, body 
+{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    cursor: none;
+    background:  rgb(240,229,217);
+}
+
+.round_cursor
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 60%;
+    border: rgb(96,172,177) 1px solid;
+    background: none;
+    z-index: 13;
+    pointer-events: none;
+}
+
+
+.round_in_cursor
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 60%;
+    background: rgb(96,172,177);
+    z-index: 13;
+    transform: translateX(-50%)  translateY(-50%);
+    pointer-events: none;
+}
